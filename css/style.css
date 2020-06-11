@@ -29,11 +29,6 @@ header {
   color: #FFFFFF;
   margin-left: 22px;
 }
-@media screen and (max-width: 1440px) {
-#menu {
-  display: none;
-  }
-}
 @media screen and (max-width: 425px) {
   #top-menu a {
     display: none;
@@ -75,6 +70,9 @@ header {
     margin-right: 40px;
   }
 }
+#menu {
+  display: none;
+  }
 @media screen and (max-width: 425px) {
   body {
     width: 425px;
