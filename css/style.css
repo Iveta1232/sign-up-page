@@ -1,0 +1,153 @@
+body {
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a {
+  text-decoration: none;   /* ubratj vse podcherkivanija dlja ssilok */
+}
+header {
+  max-width: 1139px; /* max - chtobi kogta zumim sajt, header tozhe umenshalsja */
+  margin: 38px auto 0 auto;
+}
+#logo {
+  display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+
+#top-menu {
+  float: right; /* plavajuschij element, uhodit vprava */
+}
+
+#top-menu a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+
+ /* otstup ot elementov */
+  margin-left: 22px;
+}
+
+.download-icon {
+  margin-right: 6px;
+}
+
+#top-menu img, #top-menu svg  {
+  vertical-align: middle;
+}
+/*
+.instagram-icon::before {
+  content: url("../images/instagram-icon.svg");
+} */
+
+/* .red path{  mozhno zakrasitj svg (v dannom sluchae - twitter)
+  fill: red;
+} */
+
+.sign-header {
+    position:relative;
+    top: -39px;
+    left: 20px;
+    width: 324px;
+    height: 150px;
+    background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.sign-header h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  padding-top: 31px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.sign-icons {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.sign-icons a {  /* rasstavljajem 3 ikonki po seredine */
+  margin: 0 18px;
+/*  margin-left: 18px;   tozhe samoje chto i 1 stroka
+  margin-right: 18px; */
+}
+
+
+.sign-classical {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.87);
+
+  text-align: center;
+  margin-top: -7px;   /* purple sdvinuto naverh na -39px, nachaljnoe rasstojanie 32px, 32-39=-7 */
+  margin-bottom: 33px;
+}
+
+
+#sign-up {
+    background-color: white;
+    width: 365px;
+    height: 509px;
+    margin: 160px auto 0;
+}
+
+
+#sign-up form label {  /* vse label kotorije nahodjatca v form */
+  margin-left: 26px;
+  width: 28px;
+}
+#sign-up form input {
+  width: 269px;
+  margin-left: 11px;
+  margin-bottom: 46px; /* otdelitj drug ot druga strochki */
+  padding: 0;
+}
+.underline {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.sub {
+    background: transparent;
+    border: none;
+    color: #9C27B0;
+    display: flex;
+    margin: -2px auto 0 auto;  /* 44px-46px = -2px (ot polja password), pikseli summirujutjca */
+}
+footer {
+  width: 1136px;
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+/*  objedinenie dlja dvuh tegov */
+#foot-menu a, footer p {
+  color: #fff;
+  line-height: 14px;
+}
+
+#foot-menu a{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+/*  color: #FFFFFF !important; deljaet stilj samim glavnim, ne vazhno v kakom meste faila budet napisano */
+  margin-right: 34px;
+}
+footer p{
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0;  /*  mozhno pontjatj naverh, ubrav vse margin */
+}
