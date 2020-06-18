@@ -198,15 +198,15 @@ body {
   background-image: url('../images/bg_t.png');
 }
   footer {
-    text-align: center;
+    text-align: left;
     display: block;
     width: 471px;
     height: 63px;
-    margin: 74px auto 28px auto;
+    margin: 74px auto 28px 40px;
   }
   footer p {
 
-    text-align: center;
+    text-align: right;
     margin-top: 31px;
 
   }
