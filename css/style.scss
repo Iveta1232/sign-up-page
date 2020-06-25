@@ -1,0 +1,260 @@
+$default_font_family: Roboto;
+
+@mixin default-font {
+  font-family: $default_font_family;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+@mixin default-font {
+  font: {
+    family: $default_font_family;
+    style: normal;
+    weight: normal;
+  }
+}
+*/
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+body {
+  background: {
+    image: url('../images/bg.png');
+    repeat: no-repeat;
+    size: cover;
+  }
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  margin: 38px 157px 0 144px;
+}
+#logo {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+#top-menu {
+  float: right;
+
+  a {
+    @include default-font;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-left: 22px;
+  }
+  img, svg  {
+    vertical-align: middle;
+  }
+}
+
+
+.download-icon {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 425px) {
+  #top-menu a {
+    display: none;
+  }
+}
+@media screen and (max-width: 786px) {
+  body {
+    margin-top: 40px;
+  }
+  header {
+    @include size(786px, 70px);
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: -38px;
+    margin-left: 0;
+  }
+  #logo {
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    padding-left: 24px;
+  }
+  #top-menu {
+    margin-top: 24px;
+  }
+  #top-menu .ins {
+    margin-right: 40px;
+  }
+}
+#menu {
+  display: none;
+  }
+@media screen and (max-width: 425px) {
+  header {
+    @include size(425px, 70px);
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: -38px;
+    margin-right: 5px;
+  }
+  #menu {
+    display: inline;
+    float: right;
+    @include size(22px, 14px);
+    margin-top: 27px;
+    margin-right: 23px;
+  }
+  #menu .three {
+    margin-top: -36px;
+    vertical-align: top;
+  }
+  #menu .two {
+    margin-top: -12px;
+    vertical-align: top;
+  }
+}
+
+/*
+.instagram-icon::before {
+  content: url("../images/instagram-icon.svg");
+} */
+
+/* .red path{
+  fill: red;
+} */
+
+$block_to_top: -39px;
+
+.sign-header {
+  position: relative;
+  top: $block_to_top;
+  left: 20px;
+  @include size(324px, 150px);
+  background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.sign-header h1 {
+  @include default-font;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 31px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sign-icons {
+  margin-top: 36px;
+  text-align: center;
+}
+.sign-icons a {
+  margin: 0 18px;
+/*  margin-left: 18px;
+  margin-right: 18px; */
+}
+.sign-classical {
+  @include default-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.87);
+
+  text-align: center;
+  margin-top: 32px + $block_to_top;
+  margin-bottom: 33px;
+}
+#sign-up {
+  background-color: white;
+  @include size(365px, 509px);
+  margin: 160px auto 0;
+}
+#sign-up form label {
+  margin-left: 26px;
+  width: 28px;
+}
+#sign-up form input {
+  width: 269px;
+  margin-left: 11px;
+  margin-bottom: 46px;
+  padding: 0;
+}
+.underline {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.sub {
+  background: transparent;
+  border: none;
+  color: #9C27B0;
+  display: flex;
+  margin: -2px auto 0 auto;
+}
+footer {
+  width: 1136px;
+  margin: 112px 144px 32px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+#foot-menu a, footer p {
+  color: #fff;
+  line-height: 14px;
+}
+#foot-menu a{
+  font-family: $default_font_family;
+  font-weight: 500;
+  font-size: 12px;
+/*  color: #FFFFFF !important; */
+  margin-right: 34px;
+}
+footer p{
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0;
+}
+@media screen and (max-width: 786px) {
+
+body {
+
+  background-image: url('../images/bg_t.png');
+}
+  footer {
+    text-align: left;
+    display: block;
+    @include size(471px, 63px);
+    margin: 74px auto 28px 40px;
+  }
+  footer p {
+
+    text-align: right;
+    margin-top: 31px;
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+body {
+  height: 794px;
+  background-image: url('../images/bg_m.png');
+}
+
+#sign-up {
+  margin-top: 89px;
+}
+footer {
+  @include size(324px, 62px);
+  display: inline-block;
+  margin: 64px 72px 28px 29px;
+}
+#foot-menu a {
+  display: inline-block;
+  margin-right: 20px;
+}
+#foot-menu .a {
+  margin-right: 0;
+}
+footer p {
+  text-align: center;
+  margin-top: 30px;
+  }
+}

@@ -1,116 +1,114 @@
+/*
+@mixin default-font {
+  font: {
+    family: $default_font_family;
+    style: normal;
+    weight: normal;
+  }
+}
+*/
 body {
-  background-image: url('../images/bg.png');
+  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-}
+  margin: 0; }
+
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 header {
-  margin: 38px 157px 0 144px;
-}
+  margin: 38px 157px 0 144px; }
+
 #logo {
-    display: inline-block;
-    color: white;
-    font-size: 18px;
-}
+  display: inline-block;
+  color: white;
+  font-size: 18px; }
+
 #top-menu {
-  float: right;
-}
-#top-menu a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #FFFFFF;
-  margin-left: 22px;
-}
+  float: right; }
+  #top-menu a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-left: 22px; }
+  #top-menu img, #top-menu svg {
+    vertical-align: middle; }
+
+.download-icon {
+  margin-right: 6px; }
+
 @media screen and (max-width: 425px) {
   #top-menu a {
-    display: none;
-  }
-}
-.download-icon {
-  margin-right: 6px;
-}
-#top-menu img, #top-menu svg  {
-  vertical-align: middle;
-}
+    display: none; } }
 @media screen and (max-width: 786px) {
   body {
-    margin-top: 40px;
-  }
+    margin-top: 40px; }
+
   header {
     width: 786px;
     height: 70px;
     background: rgba(0, 0, 0, 0.4);
     margin-top: -38px;
-    margin-left: 0;
-  }
+    margin-left: 0; }
+
   #logo {
     display: inline-block;
     font-size: 18px;
     color: #FFFFFF;
     margin-top: 24px;
-    padding-left: 24px;
-  }
+    padding-left: 24px; }
+
   #top-menu {
-    margin-top: 24px;
-  }
+    margin-top: 24px; }
+
   #top-menu .ins {
-    margin-right: 40px;
-  }
-}
+    margin-right: 40px; } }
 #menu {
-  display: none;
-  }
+  display: none; }
+
 @media screen and (max-width: 425px) {
   header {
     width: 425px;
     height: 70px;
     background: rgba(0, 0, 0, 0.4);
     margin-top: -38px;
-    margin-right: 5px;
-  }
+    margin-right: 5px; }
+
   #menu {
     display: inline;
     float: right;
     width: 22px;
     height: 14px;
     margin-top: 27px;
-    margin-right: 23px;
-  }
+    margin-right: 23px; }
+
   #menu .three {
     margin-top: -36px;
-    vertical-align: top;
-  }
+    vertical-align: top; }
+
   #menu .two {
     margin-top: -12px;
-    vertical-align: top;
-  }
-}
-
+    vertical-align: top; } }
 /*
 .instagram-icon::before {
   content: url("../images/instagram-icon.svg");
 } */
-
 /* .red path{
   fill: red;
 } */
-
 .sign-header {
-  position:relative;
+  position: relative;
   top: -39px;
   left: 20px;
   width: 324px;
   height: 150px;
   background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 3px;
-}
+  border-radius: 3px; }
+
 .sign-header h1 {
   font-family: Roboto;
   font-style: normal;
@@ -119,17 +117,17 @@ header {
   line-height: 23px;
   padding-top: 31px;
   text-align: center;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
+
 .sign-icons {
   margin-top: 36px;
-  text-align: center;
-}
+  text-align: center; }
+
 .sign-icons a {
   margin: 0 18px;
-/*  margin-left: 18px;
-  margin-right: 18px; */
-}
+  /*  margin-left: 18px;
+    margin-right: 18px; */ }
+
 .sign-classical {
   font-family: Roboto;
   font-style: normal;
@@ -137,110 +135,96 @@ header {
   font-size: 14px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.87);
-
   text-align: center;
   margin-top: -7px;
-  margin-bottom: 33px;
-}
+  margin-bottom: 33px; }
+
 #sign-up {
   background-color: white;
   width: 365px;
   height: 509px;
-  margin: 160px auto 0;
-}
+  margin: 160px auto 0; }
+
 #sign-up form label {
   margin-left: 26px;
-  width: 28px;
-}
+  width: 28px; }
+
 #sign-up form input {
   width: 269px;
   margin-left: 11px;
   margin-bottom: 46px;
-  padding: 0;
-}
+  padding: 0; }
+
 .underline {
   border: none;
-  border-bottom: 1px solid grey;
-}
+  border-bottom: 1px solid grey; }
+
 .sub {
   background: transparent;
   border: none;
   color: #9C27B0;
   display: flex;
-  margin: -2px auto 0 auto;
-}
+  margin: -2px auto 0 auto; }
+
 footer {
   width: 1136px;
   margin: 112px 144px 32px 160px;
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
+
 #foot-menu a, footer p {
   color: #fff;
-  line-height: 14px;
-}
-#foot-menu a{
+  line-height: 14px; }
+
+#foot-menu a {
   font-family: Roboto;
   font-weight: 500;
   font-size: 12px;
-/*  color: #FFFFFF !important; */
-  margin-right: 34px;
-}
-footer p{
+  /*  color: #FFFFFF !important; */
+  margin-right: 34px; }
+
+footer p {
   font-weight: normal;
   font-size: 12px;
-  margin: 0;
-}
+  margin: 0; }
+
 @media screen and (max-width: 786px) {
+  body {
+    background-image: url("../images/bg_t.png"); }
 
-body {
-
-  background-image: url('../images/bg_t.png');
-}
   footer {
     text-align: left;
     display: block;
     width: 471px;
     height: 63px;
-    margin: 74px auto 28px 40px;
-  }
+    margin: 74px auto 28px 40px; }
+
   footer p {
-
     text-align: right;
-    margin-top: 31px;
-
-  }
-
+    margin-top: 31px; } }
 @media screen and (max-width: 425px) {
+  body {
+    height: 794px;
+    background-image: url("../images/bg_m.png"); }
 
-body {
-  height: 794px;
-  background-image: url('../images/bg_m.png');
-}
-
-#sign-up {
-  margin-top: 89px;
-}
+  #sign-up {
+    margin-top: 89px; }
 
   footer {
     width: 324px;
     height: 62px;
     display: inline-block;
-    margin: 64px 72px 28px 29px;
+    margin: 64px 72px 28px 29px; }
 
-    }
-    #foot-menu a {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    #foot-menu .a {
-      margin-right: 0;
-    }
+  #foot-menu a {
+    display: inline-block;
+    margin-right: 20px; }
 
-    footer p {
-      text-align: center;
-      margin-top: 30px;
+  #foot-menu .a {
+    margin-right: 0; }
 
-    }
+  footer p {
+    text-align: center;
+    margin-top: 30px; } }
 
-}
+/*# sourceMappingURL=style.css.map */
